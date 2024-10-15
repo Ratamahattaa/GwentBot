@@ -1,0 +1,25 @@
+:host {
+    width: 80%;
+    justify-content: center;
+    height: 60vh;
+    margin: 5vh auto;
+
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    border: 2px solid BurlyWood;
+    border-radius: 5vh;
+    padding: 4vh;
+
+    .side {
+        width: 50%;
+    }
+
+    .divider {
+        background-color: wheat;
+        border: 0.2vw solid BurlyWood;
+        height: 60vh;
+    }
+}

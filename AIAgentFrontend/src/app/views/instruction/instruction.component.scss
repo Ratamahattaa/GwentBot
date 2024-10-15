@@ -1,0 +1,29 @@
+.container1 {
+    background-image: url("../../../assets/instruction/firstPage.jpg");
+}
+.container2 {
+    background-image: url("../../../assets/instruction/secondPage.jpg");
+}
+.container3 {
+    background-image: url("../../../assets/instruction/thirdPage.jpg");
+}
+.container4 {
+    background-image: url("../../../assets/instruction/fourthPage.jpg");
+}
+.container5 {
+    background-image: url("../../../assets/instruction/fifthPage.jpg");
+}
+.container6 {
+    background-image: url("../../../assets/instruction/sixPage.jpg");
+}
+.container7 {
+    background-image: url("../../../assets/instruction/sevenPage.jpg");
+}
+
+.container {
+    height: 90vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

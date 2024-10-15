@@ -1,0 +1,24 @@
+<div class="choose-container__buttons-container">
+    <button
+        *ngIf="choosenCards$ | async as choosenCards"
+        class="button choose-container__buttons-container--button"
+        type="button"
+        (click)="onSend()"
+        [disabled]="choosenCards.length < 10"
+    >
+        start
+    </button>
+</div>
+<div class="choose-container__cards-container">
+    <app-clickable-card
+        class="margin"
+        [ngClass]="{
+            'no-margin': card | isCardClicked: (choosenCards$ | async)
+        }"
+        *ngFor="let card of cards$ | async; let cardIndex = index"
+        [card]="card"
+        [isClicked]="card | isCardClicked: (choosenCards$ | async)"
+        (wasClicked)="cardStateWasChanged(card)"
+    >
+    </app-clickable-card>
+</div>

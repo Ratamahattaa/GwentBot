@@ -1,0 +1,29 @@
+<form class="main" [formGroup]="enemyForm">
+    <input
+        formControlName="enemyAllPoints"
+        title="allPoints"
+        type="number"
+        class="input"
+    />
+    <input
+        formControlName="enemySpyPoints"
+        title="spyPoints"
+        type="number"
+        class="input"
+    />
+    <app-board-status
+        formControlName="enemyPassed"
+        type="Pass"
+    ></app-board-status>
+    <app-board-status formControlName="isFrost" type="Frost"></app-board-status>
+    <app-board-status formControlName="isFog" type="Fog"></app-board-status>
+    <app-board-status formControlName="isRain" type="Rain"></app-board-status>
+    <button
+        type="button"
+        class="button"
+        [disabled]="isDisabled"
+        (click)="sendEnemyStatus()"
+    >
+        Send
+    </button>
+</form>

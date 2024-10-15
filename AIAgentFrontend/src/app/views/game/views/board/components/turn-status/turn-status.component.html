@@ -1,0 +1,9 @@
+<app-enemy-info
+    [counter]="turnStatus.turn"
+    [enemyPoints]="turnStatus.enemiesSpyPoints"
+    class="side"
+></app-enemy-info>
+
+<div class="divider"></div>
+
+<app-your-info [play]="turnStatus.player" class="side"></app-your-info>

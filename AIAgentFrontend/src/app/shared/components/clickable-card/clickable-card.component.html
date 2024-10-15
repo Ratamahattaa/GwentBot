@@ -1,0 +1,3 @@
+<div class="normal" [ngClass]="{ clicked: isClicked }">
+    <app-card [card]="card" (click)="wasClicked.emit()"></app-card>
+</div>

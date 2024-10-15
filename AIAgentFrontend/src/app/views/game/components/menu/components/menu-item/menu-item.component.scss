@@ -1,0 +1,38 @@
+.menu-item {
+    display: flex;
+    align-items: center;
+    width: 15vw;
+    margin-top: 2vh;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &__link {
+        color: black;
+        font-size: 4vh;
+        text-decoration: none;
+    }
+
+    &.active {
+        color: wheat;
+        font-weight: 700;
+    }
+
+    &__icon-container {
+        width: 5vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &--disabled {
+        background-color: lightgray;
+    }
+
+    &--disabled:hover {
+        transform: scale(1);
+        box-shadow: 0px 0px 20px 0px transparent;
+    }
+}

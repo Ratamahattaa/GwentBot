@@ -1,0 +1,33 @@
+.choose-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    &__buttons-container {
+        height: 10vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 1rem;
+
+        &--button {
+            font-size: 6vh;
+            width: auto;
+            padding: 0 5vh;
+        }
+    }
+
+    &__cards-container {
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3vh;
+        flex-wrap: wrap;
+        width: 100%;
+        border-top: 3px solid white;
+    }
+}

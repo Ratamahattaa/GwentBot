@@ -1,0 +1,15 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .menu-container {
+        width: 20%;
+    }
+
+    .game-container {
+        width: 60%;
+        height: 91vh;
+        justify-content: center;
+    }
+}

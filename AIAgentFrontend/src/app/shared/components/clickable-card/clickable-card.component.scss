@@ -1,0 +1,12 @@
+:host {
+    .normal {
+        width: 16vh;
+    }
+
+    .clicked {
+        border: lightblue 2px solid;
+        border-radius: 0.3rem;
+        box-shadow: 0px 0px 5px 0px lightblue;
+        transition: all 0.1s;
+    }
+}

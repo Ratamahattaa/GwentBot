@@ -1,0 +1,15 @@
+.start-container {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    width: 100%;
+    justify-content: space-between;
+
+    &--button {
+        width: 30vw;
+        height: 15vh;
+        font-size: 10vh;
+    }
+}

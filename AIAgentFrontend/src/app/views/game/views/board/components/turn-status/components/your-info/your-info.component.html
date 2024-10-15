@@ -1,0 +1,16 @@
+<div class="element-container">
+    <p class="description">Card:</p>
+
+    <div class="card-container">
+        <img
+            [src]="'data:image/jpeg;base64,' + play.image"
+            alt="card"
+            class="card-container__img"
+        />
+    </div>
+</div>
+
+<app-number-description
+    [number]="play.pointsOnBoard"
+    description="Post Card Points"
+></app-number-description>

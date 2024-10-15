@@ -1,0 +1,29 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vh;
+        width: 7vh;
+        height: 7vh;
+        padding: 5vh;
+        background-color: aliceblue;
+        color: black;
+        border: 2px solid gray;
+        border-radius: 100%;
+        font-family: "Gwent";
+    }
+
+    .description {
+        font-size: 6vh;
+        line-height: 8vh;
+        color: black;
+        font-family: "Gwent";
+    }
+}

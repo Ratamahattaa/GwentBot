@@ -1,0 +1,25 @@
+<ng-container *ngIf="turnStatuses$ | async as turns">
+    <app-enemy-status
+        (statusSubmitted)="currentTurn = turns.length"
+    ></app-enemy-status>
+
+    <div class="turn-status-container" *ngIf="turns.length > 0">
+        <button
+            class="button button-navigation"
+            [disabled]="currentTurn === 0"
+            (click)="currentTurn = currentTurn - 1"
+        >
+            <
+        </button>
+
+        <app-turn-status [turnStatus]="turns[currentTurn]"></app-turn-status>
+
+        <button
+            class="button button-navigation"
+            [disabled]="currentTurn === turns.length - 1"
+            (click)="currentTurn = currentTurn + 1"
+        >
+            >
+        </button>
+    </div>
+</ng-container>

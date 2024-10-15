@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Gwent";
+    src: url("./assets/font/hinted-GWENT-ExtraBold.ttf");
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Gwent", "Gwent", sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 5vh;
+    color: black;
+    font-size: 6vh;
+    background-color: aliceblue;
+    border: 0.5vh solid grey;
+    border-radius: 3vh;
+    font-family: "Gwent";
+}
+
+.button:not([disabled]):hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 0px DarkGoldenrod;
+}
+
+.button:disabled {
+    box-shadow: 0px 0px 20px 0px transparent;
+}

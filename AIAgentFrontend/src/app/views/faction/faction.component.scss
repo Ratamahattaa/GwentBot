@@ -1,0 +1,18 @@
+.faction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__button {
+        width: 30vh;
+        height: 30vh;
+        margin: 5vh 10vh;
+
+        &__image {
+            width: 25vh;
+            height: 25vh;
+        }
+    }
+}
