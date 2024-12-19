@@ -15,7 +15,7 @@ export class InstructionComponent {
     constructor(private readonly router: Router) {}
 
     protected next(): void {
-        if (this.instructionIndex === 7) {
+        if (this.instructionIndex === 5) {
             this.router.navigateByUrl("/start");
         }
         this.instructionIndex++;
@@ -33,10 +33,6 @@ export class InstructionComponent {
                 return "container4";
             case 5:
                 return "container5";
-            case 6:
-                return "container6";
-            case 7:
-                return "container7";
             default:
                 return "";
         }
